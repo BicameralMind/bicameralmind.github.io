@@ -1,4 +1,3 @@
-
 /*
 ====================================
 ------------------------------------
@@ -143,25 +142,6 @@ h6 {
     box-shadow: none;
 }
 
-
-
-
-/* Alert Style
------------------------------------------------------*/
-.alert {
-    padding: 10px 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 0;
-}
-
-.alert strong {
-  display: inline-block !important;
-  margin: 0 !important;
-}
-
-
-
 /* BUTTON STYLE
 -----------------------------------------------------*/
 /*common-btn*/
@@ -198,33 +178,6 @@ h6 {
     background-color: #4eb28f;
     border-color: #4eb28f;
 }
-
-#emailbtn {
-	border: 0;
-    border-bottom: 3px solid;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 28px;
-    padding: 9px 22px;
-	background-color:#68c3a3;
-    border-color: rgba(51, 51, 51, 0.15);
-	border-radius: 4px;
-	margin: auto;
-    width: 100%;
-	margin-bottom: 10px;
-	color: white;
-}
-
-#emailbtn a {
-	color: white;
-}
-
-#emailbtn:hover {
-	color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
-}
-
 
 /*btn-info*/
 .btn-info{
@@ -388,7 +341,6 @@ ul.list-check li::before {
 }
 .intro p{
 	color: #f7f7f7;
-	font-size: 20px;
 	margin-bottom: 40px;
 }
 
@@ -566,6 +518,7 @@ SOCIAL ICON
 }
 
 
+
 /* === About Section === */
 .short-info {
     margin-bottom: 40px;
@@ -589,6 +542,7 @@ SOCIAL ICON
 }
 .my-signature img{
     max-width: 200px;
+    
 }
 
 
@@ -596,9 +550,6 @@ SOCIAL ICON
 .download-button a {
     margin-right: 20px;
     color: #fff;
-	width: 700px;
-	position: relative;
-	
 }
 .download-button a i {
     margin-right: 10px;
@@ -653,37 +604,30 @@ SOCIAL ICON
 
 .video-section {
     background: url(../images/video-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+}
+.video-section .tf-bg-overlay {
     min-height: 500px;
 }
-
 .video-intro {
     position: absolute;
     top: 50%;
-    left: 50%;
+    margin-top: -50px;
+    left: 0;
+    right:0;
     color: #fff;
-    padding: 0 20px;
-    text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    background: none;
 }
 
-.video-intro a {
-    display: inline-block;
-    color: #fff;
-    width: 70px;
+.video-intro i{
+    border: 1px solid #fff;
+    width: 80px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
-    border: 1px solid #fff;
-}
-.video-intro a:hover {
-    color: #68c3a3;
-    background-color: #fff;
-    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .video-intro h2 {
@@ -691,6 +635,10 @@ SOCIAL ICON
     text-transform: uppercase;
 }
 
+.video-intro .play-trigger {
+    border: 0;
+    background: transparent;
+}
 
 /* === Resume Section === */
 
